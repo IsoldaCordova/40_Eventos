@@ -3,5 +3,18 @@
 	font-size: 150%;
 }
 textarea{
-	margin-left: 30%;
+	width: 100%;
+}
+/**/
+*{
+	box-sizing: border-box;
+}
+ul li{
+	cursor: pointer;
+	position: relative;
+	background:  #eee;
+	transition: 0.2s;
+}
+ul li:nth-child(odd){
+	background: #f9f9f9;
 }
