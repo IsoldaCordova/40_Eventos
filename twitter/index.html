@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Twitter</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+    <!-- Latest compiled and minified CSS -->
+    	<link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-ms-12 col-xs-12">
+						<h1 class="alert alert-success text-center">Mi Listita</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-ms-6 col-xs-6">
+						<form id="todoForm">
+							<textarea id="todoInput" rows="5" cols="160" placeholder="Añade tu nueva tarea"></textarea>
+							<button type="button" class="btn btn-success" onclick="todoList()">Añade tu lista</button>
+						</form>
+						<div class="checkbox">
+							<ul id="todoList" class="list-unstyled">
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--lista  -->
+	<!-- JS -->
+	<script type='text/javascript' src='js/main.js'></script>
+	</body>
+</html>
