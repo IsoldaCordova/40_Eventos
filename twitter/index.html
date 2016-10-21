@@ -14,7 +14,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-ms-12 col-xs-12">
-						<h1 class="alert alert-success text-center">Mi Listita</h1>
+						<h1 class="alert alert-success text-center fijo">Mi Listita</h1>
 					</div>
 				</div>
 			</div>
@@ -23,13 +23,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-ms-6 col-xs-6">
-						<form id="todoForm">
-							<textarea id="todoInput" rows="5" cols="160" placeholder="Añade tu nueva tarea"></textarea>
+						<div class="fijo">
+							<form id="todoForm">
+							<textarea id="areaTexto" rows="5" cols="160" placeholder="Añade tu nueva tarea"></textarea>
 							<button type="button" class="btn btn-success" onclick="todoList()">Añade tu lista</button>
 						</form>
-						<div class="checkbox">
+						</div>	
+						<div class="checkbox tachar">
 							<ul id="todoList" class="list-unstyled">
-							
 							</ul>
 						</div>
 					</div>
