@@ -6,9 +6,12 @@ function todoList(){
 	var checkbox = document.createElement("input");
  	checkbox.type ="checkbox";
  	checkbox.value = 1;
- 	newItem.appendChild(checkbox);
- 	newItem.appendChild(text);
+ 	
 	document.getElementById("todoList").appendChild(newItem);
 	// button
-	
+	var icono = document.createElement("i");
+		icono.setAttribute("class","fa fa-trash");
+	newItem.appendChild(checkbox);
+ 	newItem.appendChild(text);
+ 	newItem.appendChild(icono);
 }
