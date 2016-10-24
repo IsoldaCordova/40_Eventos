@@ -1,5 +1,29 @@
-.cuadro{
-	background-color: purple;
-	height: 30em;
+*{
+	font-size: helvetica;
+}
+h1{
+	color: white!important;
+}
+.blue{
+	background-color: #000000;
+	height: 5.4em;
+}
+#boton{
+	background-color: black;
+	height: 3em;
 	width: 10em;
+	color:white!important;
+	margin-top: 2%;
+}
+button{
+	height: 3em;
+	width: 7em;
+	background-color: gray;
+	color: white!important;
+}
+input{
+	margin-right: 1%!important;
+}
+.mt{
+	margin-top: 35.1%;
 }

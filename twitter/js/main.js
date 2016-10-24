@@ -1,4 +1,7 @@
-function todoList(){
+
+}
+function todoList(){                                                             
+	
 	// crear la lista con checkbox
 	var item = document.getElementById("areaTexto").value;
 	var text = document.createTextNode(item);
@@ -14,7 +17,7 @@ function todoList(){
  	newItem.appendChild(text);
  	newItem.appendChild(icono);
  	icono.onclick = function(){
- 		item.parentElement.removeChild(item);
+ 		newItem.parentElement.removeChild(item);
  	}
  	checkbox.onclick = function(){
  		if(checkbox.checked == true){
