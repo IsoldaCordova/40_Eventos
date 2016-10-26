@@ -25,25 +25,24 @@ function añadirLista(){
  		var titulo =  document.createElement("h2");
  			titulo.innerHTML = listaName.value;
  		var texto = document.createElement("textarea");
- 			texto.setAttribute("placeholder","añadir lista");
 			texto.innerHTML = listaName.value;
+			texto.value = ("placeholder","añadir lista");
  		var botonDos = document.createElement("button");
  			botonDos.setAttribute("type","button");
  			botonDos.style.display="block";
-			botonDos.textContent = ("Guardar");
+			botonDos.textContent = ("Guardar lista");
 		tituloName.appendChild(titulo);
 		tituloName.appendChild(texto);
 		tituloName.appendChild(botonDos);
 
-		
+	
+		botonDos.addEventListener("click",listas);
 
-		botonDos.EventListener("click",crearListas);
 
-		function crearListas(){
-			var tema = document.createElement("h3");
-				tema.innerHTML = listaName.value;
-
-			texto.appendChild(tema);
+		function listas(){
+			var p = document.createElement("p");
+				p.innerHTML = texto.value;
+				tituloName.appendChild(p)
 		}
  	}
  }
