@@ -15,12 +15,17 @@ function añadirLista(){
 	contenedor.appendChild(boton);
  	// Dar click en boton guardar y se borra el boton
  	boton.addEventListener("click",crearTitulo);
- 	
+ 	boton.onclick = function(){
+ 		boton.parentElement.removeChild(listaName);
+ 		boton.parentElement.removeChild(boton);
+ 		}
+
  	function crearTitulo(){
  		var tituloName = document.getElementById("tema");
  		var titulo =  document.createElement("h2");
  			titulo.innerHTML = listaName.value;
  		var texto = document.createElement("textarea");
+ 			texto.setAttribute("placeholder","añadir lista");
 			texto.innerHTML = listaName.value;
  		var botonDos = document.createElement("button");
  			botonDos.setAttribute("type","button");
@@ -29,6 +34,8 @@ function añadirLista(){
 		tituloName.appendChild(titulo);
 		tituloName.appendChild(texto);
 		tituloName.appendChild(botonDos);
+
+		
 
 		botonDos.EventListener("click",crearListas);
 
